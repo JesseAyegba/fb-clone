@@ -1,11 +1,16 @@
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
     <div className="app">
-      <div className="app__nav"></div>
+      <Navbar />
+
       <div className="app__container">
-        <div className="app__sidebar"></div>
+        <div className="app__sidebar">
+          <Sidebar />
+        </div>
 
         <main className="app__middle"></main>
 
