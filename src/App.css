@@ -3,12 +3,52 @@
   margin: 0;
   box-sizing: border;
 }
-.app__nav {
-  height: 80px;
-  position: sticky;
-  top: 0;
-  background-color: black;
+:root {
+  --dashboard-bg: rgb(24, 25, 26);
+  --navbar-bg: rgb(36, 37, 38);
+  --hover-bg: rgb(58, 59, 60);
+  --icon-color: #e4e6eb;
+  --light-blue: #0676e8;
 }
+
 .app__container {
-  border: 2px red solid;
+  min-height: calc(100vh - 60px);
+}
+.app__sidebar {
+  height: 100%;
+  display: none;
+  /* border: 2px red solid; */
+}
+.app__middle {
+  height: 100%;
+
+  /* border: 2px green solid; */
+}
+.app__feeds {
+  height: 100%;
+
+  display: none;
+  /* border: 2px purple solid; */
+}
+@media (min-width: 1024px) {
+  .app__container {
+    height: calc(100vh - 60px);
+  }
+  .app__container {
+    display: flex;
+  }
+  .app__sidebar {
+    display: block;
+    flex: 0.23;
+    overflow-y: scroll;
+  }
+  .app__middle {
+    flex: 0.54;
+    overflow-y: scroll;
+  }
+  .app__feeds {
+    display: block;
+    flex: 0.23;
+    overflow-y: scroll;
+  }
 }

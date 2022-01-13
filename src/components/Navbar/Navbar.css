@@ -1,0 +1,25 @@
+.navbar {
+  height: 60px;
+  background-color: var(--navbar-bg);
+  display: flex;
+}
+.navbar__left {
+  border: 2px white solid;
+  flex: 0.23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__middle {
+  border: 2px white solid;
+  flex: 0.54;
+}
+.navbar__right {
+  border: 2px white solid;
+  flex: 0.23;
+}
+.navbar__icon {
+  color: var(--light-blue);
+  margin-right: 10px;
+  font-size: 37px;
+}
